@@ -1,0 +1,366 @@
+@media only screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav_section .main_nav_container {
+    display: none;
+  }
+
+  .main_nav_item .nav_item a {
+    margin-right: 0;
+    font-size: 1.1428rem;
+  }
+
+  .main_nav_item .nav_item.active a {
+    border-bottom: none;
+  }
+
+  .top_bar {
+    display: none !important;
+  }
+
+  .form_hero_s input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .copyright .container {
+    flex-direction: column;
+  }
+
+  .hero_content h2 {
+    font-size: 5.7142rem;
+  }
+
+  .form_hero_s {
+    width: 90%;
+  }
+  .form_hero_s > input {
+    width: 70%;
+  }
+  .form_hero_s > button {
+    width: 29%;
+  }
+
+  .nav_section {
+    padding: 5px;
+    background: rgba(255, 0, 225, 0.85);
+  }
+
+  .destinations_title_wrap {
+    flex-direction: column;
+  }
+  .destinations_title_wrap .view_more_link {
+    width: 100%;
+    text-align: end;
+  }
+
+  .popular_destinations {
+    margin-top: 45px;
+  }
+  .popular_destinations h2 {
+    width: 100%;
+  }
+
+  .destination_right {
+    margin-top: 30px;
+  }
+
+  .travel_expert_advice {
+    margin-bottom: 45px;
+  }
+  .travel_expert_advice .row .col-md-6:last-child {
+    margin-top: 240px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_3 {
+    display: none;
+    width: 300px;
+    left: -25px;
+    top: 10px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_4 {
+    display: none;
+    width: 185px;
+    top: 15px;
+    right: -15px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_5 {
+    display: none;
+    width: 100px;
+    top: 100px;
+    right: 100px;
+  }
+
+  .travel_expert_advice .talk_link_a {
+    margin-top: 45px;
+  }
+
+  .packages_header_wrap {
+    flex-direction: column;
+  }
+
+  .packages_carousel_wrap .pack_carousel_prev {
+    left: -30px;
+  }
+  .packages_carousel_wrap .pack_carousel_prev:hover {
+    left: -30px;
+  }
+
+  .packages_carousel_wrap .pack_carousel_next {
+    right: -30px;
+  }
+  .packages_carousel_wrap .pack_carousel_next:hover {
+    right: -30px;
+  }
+
+  .featured_package {
+    padding: 45px 0;
+  }
+
+  .newsletter .container .row .col-md-5 {
+    display: none;
+  }
+
+  .newsletter .newsletter_form {
+    margin-top: 45px;
+  }
+
+  .footer_2, .footer_3, .footer_4 {
+    margin-top: 30px;
+  }
+
+  .copy_left {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .copy_left p {
+    display: inline-block;
+  }
+
+  .quick_menu_link li:last-child {
+    margin-right: 0;
+  }
+
+  .it_nav_items {
+    flex-wrap: nowrap !important;
+  }
+
+  .it_nav_item.book_button_it {
+    display: none;
+  }
+
+  .it_nav .it_nav_item a p {
+    font-size: 0.8571rem;
+    display: none;
+  }
+
+  .it_section_title {
+    padding-top: 30px;
+  }
+
+  .user_meta {
+    min-width: 20%;
+  }
+
+  .footer_1::after {
+    display: none;
+  }
+
+  .it_section_content {
+    padding-top: 30px;
+  }
+
+  .itinerary_content_section {
+    padding-bottom: 60px;
+  }
+
+  .partner_icons {
+    width: 250px;
+  }
+
+  .package_carousel_nav i {
+    background: rgba(255, 255, 255, 0.45);
+    color: #5A5A5A;
+  }
+
+  .sidebar_2 {
+    margin-top: 45px;
+  }
+
+  .blog_post_side_single .sidebar_img img {
+    height: 150px;
+    max-height: 150px;
+  }
+
+  .blog_post_side_single .row h5 {
+    margin-top: 10px;
+  }
+
+  .pop_tour_side .pop_tour img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact_body_wrap .image_left {
+    display: none;
+  }
+
+  .contact_form_main .contact_wrap {
+    width: 100%;
+  }
+
+  .footer_wrap {
+    padding: 45px 0;
+  }
+
+  .travel_title_logo_text {
+    font-size: 1.7142rem;
+  }
+
+  .newsletter .newsletter_form .form-group:first-child input {
+    height: 40px;
+  }
+
+  .newsletter .newsletter_form .form-group button {
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .travel_expert_advice {
+    margin-bottom: 45px;
+  }
+  .travel_expert_advice .row .col-md-6:last-child {
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+  }
+  .travel_expert_advice .col-md-6 .img_t_3 {
+    display: none;
+    width: 300px;
+    left: -25px;
+    top: 10px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_4 {
+    display: none;
+    width: 185px;
+    top: 15px;
+    right: -15px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_5 {
+    display: none;
+    width: 100px;
+    top: 100px;
+    right: 100px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .it_nav .it_nav_item > a {
+    padding: 10px 15px;
+  }
+
+  .it_nav .it_nav_item a i {
+    font-size: 30px;
+  }
+
+  .user_meta {
+    min-width: 30%;
+  }
+
+  .it_section_content .it_day_count {
+    min-width: 50px;
+  }
+
+  .packages_carousel_wrap .pack_carousel_prev {
+    left: 0px;
+  }
+  .packages_carousel_wrap .pack_carousel_prev:hover {
+    left: 0px;
+  }
+
+  .packages_carousel_wrap .pack_carousel_next {
+    right: 0px;
+  }
+  .packages_carousel_wrap .pack_carousel_next:hover {
+    right: 0px;
+  }
+
+  .testimonials .testimonial_title {
+    font-size: 2.1428rem;
+  }
+
+  .testimonial_slider {
+    margin-top: 30px;
+  }
+
+  .testimonials_wrap {
+    padding: 0 10px;
+  }
+
+  .testimonial_carousel_nav i {
+    background: rgba(160, 108, 213, 0.55);
+    padding: 10px;
+  }
+
+  .testimonial_carousel_prev {
+    left: -25px;
+  }
+  .testimonial_carousel_prev:hover {
+    left: -25px;
+  }
+
+  .testimonial_carousel_next {
+    right: -25px;
+  }
+  .testimonial_carousel_next:hover {
+    right: -25px;
+  }
+
+  .featured_package {
+    padding: 30px 0;
+  }
+
+  .travel_expert_advice {
+    margin-bottom: 45px;
+  }
+  .travel_expert_advice .row .col-md-6:last-child {
+    margin-top: 240px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_3 {
+    display: block;
+    width: 300px;
+    left: -25px;
+    top: 10px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_4 {
+    display: block;
+    width: 185px;
+    top: 15px;
+    right: -15px;
+  }
+  .travel_expert_advice .col-md-6 .img_t_5 {
+    display: block;
+    width: 100px;
+    top: 100px;
+    right: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu_mobile {
+    display: none;
+  }
+
+  .it_book_btn_sticky {
+    display: none;
+  }
+
+  .testimonials_wrap {
+    padding: 0 60px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
