@@ -615,7 +615,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fixx {
-  position: fixed;
+  position: fixed !important;
 }
 
 img {
@@ -1653,21 +1653,30 @@ footer {
 /***************************
 11. Breadcrumb
 ***************************/
+.breadcrumb {
+  margin-bottom: 0 !important;
+}
+
 .breadcrumb_page {
   position: fixed;
   z-index: 999;
+  left: 0;
   top: 50%;
+  width: auto;
   transform: translateY(-50%) rotate(90deg);
-  left: -90px;
 }
 .breadcrumb_page ol {
   background: none;
+}
+.breadcrumb_page ol > .breadcrumb {
+  margin-bottom: 0 !important;
 }
 .breadcrumb_page ol .breadcrumb-item:first-child a i {
   color: white;
   background: #950952;
   padding: 7px;
   border-radius: 50%;
+  transform: rotate(-90deg);
 }
 .breadcrumb_page ol .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
@@ -1692,6 +1701,9 @@ footer {
   background-image: url("/images/everest.jpg");
   background-size: cover;
   background-position: center center;
+}
+.hero_image_it > .container {
+  height: 100%;
 }
 
 .hero_title_it {

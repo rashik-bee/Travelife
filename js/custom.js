@@ -182,12 +182,21 @@ $(document).ready(function() {
 $(window).scroll(function() {
     var height = $(window).scrollTop();
 
-    if((height > 100) && (window.innerWidth > 1200)) {
+    if((height > 100) && (window.innerWidth > 1200) && (!$('body').hasClass('itinerary_body'))) {
         // alert('scrolled');
+        // $('#header').addClass('fixx');
         $('#top_bar').slideUp();
         $('.header_fix').addClass('scrolled');
     }else {
+        // $('#header').removeClass('fixx');
         $('#top_bar').slideDown();
         $('.header_fix').removeClass('scrolled');
     }
+
 })
+
+if($('body').hasClass('itinerary_body')) {
+    $('.header_fix').removeClass('fixx');
+}else {
+    $('.header_fix').addClass('fixx');
+}

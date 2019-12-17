@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6 {
 .p-relative {position: relative;}
 .p-absolute {position: absolute;}
 .capitalize {text-transform: uppercase;}
-.fixx {position: fixed;}
+.fixx {position: fixed!important;}
 img {max-width: 100%;}
 
 .index_home {
@@ -1298,21 +1298,35 @@ footer {
 /***************************
 11. Breadcrumb
 ***************************/
+.breadcrumb_nav_container {
+
+}
+
+.breadcrumb {
+    margin-bottom: 0 !important;
+}
+
 .breadcrumb_page {
     position: fixed;
     z-index: 999;
+    left: 0;
     top: 50%;
+    width: auto;
     transform: translateY(-50%) rotate(90deg);
-    left: -90px;
 
     ol {
         background: none;
+
+        & > .breadcrumb {
+            margin-bottom: 0!important ;
+        }
 
         .breadcrumb-item:first-child a i {
             color: white;
             background: $main_color;
             padding: 7px;
             border-radius: 50%;
+            transform: rotate(-90deg);
         }
 
         .breadcrumb-item + .breadcrumb-item::before {
@@ -1343,6 +1357,10 @@ footer {
     background-image: url("/images/everest.jpg");
     background-size: cover;
     background-position: center center;
+
+    & > .container {
+        height: 100%;
+    }
 }
 
 .hero_title_it {
