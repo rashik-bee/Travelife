@@ -244,6 +244,22 @@ html {
     .newsletter .newsletter_form .form-group button {
         height: 40px;
     }
+    .team_mem .row .col-md-4:not(:first-child) .member_single_wrap {
+        margin-top: 30px;
+    } 
+
+    .image_top_page {
+        height: 200px;
+    }
+
+    .about_content h1 {
+        text-align: left;
+    }
+
+    .our_services {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 @media only screen and (max-width: 767px) and (min-width: 576px) {
     .travel_expert_advice {
@@ -378,6 +394,17 @@ html {
             }
         }
     }
+    .blog_post_meta .blog_writer:after, .blog_post_meta .blog_post_date:after, .blog_post_meta .comment_count:after  {
+        margin-left: 5px;;
+    }
+
+    .blog_post_meta .blog_writer, .blog_post_meta .blog_post_date, .blog_post_meta .comment_count {
+        margin-right: 5px;
+    }
+    .copyright .menu_single_q a {
+        font-size: $font-12;
+    }
+
 }
 @media only screen and (min-width:1000px){
     .hamburger{

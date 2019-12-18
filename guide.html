@@ -15,6 +15,13 @@
     <title>Document</title>
 </head>
 <body class="index_home">
+    <nav aria-label="breadcrumb" class="breadcrumb_page">
+        <ol class="breadcrumb d-flex align-items-center">
+            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a href="#">destinations</a></li>
+            <li class="breadcrumb-item active" aria-current="page">itinerary</li>
+        </ol>
+    </nav>
     <header class="header_fix fixx">
         <div class="top_bar" id="top_bar">
             <div class="container">
@@ -144,67 +151,50 @@
             </div>
         </div>
     </header>
+    <div class="tour_hero">
 
-    <nav aria-label="breadcrumb" class="breadcrumb_page">
-        <ol class="breadcrumb d-flex align-items-center">
-            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-            <li class="breadcrumb-item active" aria-current="page">contact</li>
-        </ol>
-    </nav>
-    <div class="mt-100"></div>
-    <section class="form_inquiry contact_form_main">
-        <!-- <div class="overlay_background_contact"></div> -->
+    </div>
+    <div class="mt-180"></div>
+    <section class="guide_form">
         <div class="container">
-            <h1>Get in touch</h1>
-            <h6 class="contact_sub">we are open for customizations of any sort. </h6>
-            <div class="contact_body_wrap d-flex">
-                <div class="image_left">
-                    <figure class="contact_featured_image">
-                        <img src="images/contact_cover.jpg" alt="">
-                    </figure>
-                </div>
+            <h1>Become a Tour Guide</h1>
+            <h5 class="sub_guide_title centerize">Work with us.</h5>
 
-                <div class="contact_wrap">
-                    <div class="contact_form">
-                        <form>
-                            <!-- <h2>contact us</h2> -->
-                            <div class="form-group">
-                                <label for="name">Full Name*</label>
-                                <input type="name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">E-mail Address*</label>
-                                <input type="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact_num">Contact Number</label>                                   
-                                <input type="text">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="form-group button_sub">
-                                <button class="submit_inquiry" type="sumit">send inquiry</button>
-                            </div>
-                        </form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact_wrap">
+                        <div class="contact_form_guide">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Full Name*</label>
+                                    <input type="name" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="email">E-mail Address*</label>
+                                    <input type="email" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="contact_num">Contact Number</label>                                   
+                                    <input type="text">
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group button_sub">
+                                    <button class="submit_inquiry" type="sumit">send inquiry</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="contact_map">
-
-            <!-- <h2>Find Us Here</h2> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8281318416293!2d85.33225811458348!3d27.7225923314297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb196cb257683d%3A0xe5427798bb5b3898!2sDasarath%20Chand%20Marg%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1576137753907!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </section>
-
-  
     <footer>
         <div class="footer_wrap">
             <div class="container">
@@ -294,11 +284,11 @@
 
             <div class="copy_right">
                 <ul class="quick_menu_link d-flex">
-                    <li class="menu_single_q"> <a href="">home</a> </li>
-                    <li class="menu_single_q"> <a href="">about us</a> </li>
+                    <li class="menu_single_q"> <a href="index.html">home</a> </li>
+                    <li class="menu_single_q"> <a href="about.html">about us</a> </li>
                     <li class="menu_single_q"> <a href="">destinations</a> </li>
-                    <li class="menu_single_q"> <a href="">blog</a> </li>
-                    <li class="menu_single_q"> <a href="">contact</a> </li>
+                    <li class="menu_single_q"> <a href="blog.html">blog</a> </li>
+                    <li class="menu_single_q"> <a href="contact.html">contact</a> </li>
                 </ul>
             </div>
         </div>

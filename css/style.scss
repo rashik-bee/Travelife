@@ -105,6 +105,10 @@ a {
     text-transform: uppercase;
 }
 
+.centerize {
+    text-align: center;
+}
+
 .btn_circle i {
     font-weight: 700;
     text-decoration: none;
@@ -123,6 +127,13 @@ a {
     bottom:0;
     left: 0;
     z-index: 0;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-180 {
+    margin-top: 180px;
 }
 
 /********** Rating **********/
@@ -367,11 +378,12 @@ a {
 3. Main Navbar
 *****************************/
 .nav_section{ 
-    background: transparentize($color: $main_light, $amount: 0.45) ;
+    background: transparentize($color: $main_light, $amount: 0.15) ;
     padding: 30px;
 }
 
 header.scrolled .nav_section {
+    background: transparentize($color: $main_light, $amount: 0.45) ;
     padding: 20px;
 }
 .travel_title_logo_text  {
@@ -558,13 +570,13 @@ header.scrolled .nav_section {
   
 
     .destination_left {
-        background: url(/images/back2.jpg);
+        background: url(../images/back2.jpg);
         height: 500px+30px ;
     }
 
     .destination_right {
         border-radius: 5px;
-        background: url(/images/trek-3.jpg);
+        background: url(../images/trek-3.jpg);
         height: 250px;
         width: 100%;
         background-size: cover;;
@@ -578,12 +590,12 @@ header.scrolled .nav_section {
     }
     .destinatino_RL {
         margin-top: 30px;
-        background: url(/images/2.jpg);
+        background: url(../images/2.jpg);
         height: 250px;
     }
     .destinatino_RR {
         margin-top: 30px;
-        background: url(/images/greece.jpg);
+        background: url(../images/greece.jpg);
         height: 250px;
     }
 
@@ -1302,8 +1314,11 @@ footer {
 
 }
 
+
+
 .breadcrumb {
     margin-bottom: 0 !important;
+    padding: 0;
 }
 
 .breadcrumb_page {
@@ -1346,7 +1361,9 @@ footer {
 
     }
 }
-
+.itinerary_body .breadcrumb_page {
+    left: -55px;
+}
 /*******************************
 12. Itinerary Page
 *******************************/
@@ -1392,7 +1409,7 @@ footer {
             padding: 7px 20px;
 
             &.active,
-            &:hover,
+            &:hover
              {
                 background: $light_color_1;
             }
@@ -1681,7 +1698,7 @@ aside.book_btns_grp {
 aside.ask_us {
     margin-top: 30px;
     padding: 30px;
-    background: url(/images/4.jpg);
+    background: url(../images/4.jpg);
     background-size: cover;
     background-position: center;
 
@@ -2035,7 +2052,7 @@ aside.ask_us {
 18. Newsletter
 ***************************/
 .newsletter {
-    background: url(/images/news.jpg);
+    background: url(../images/news.jpg);
     // background: linear-gradient(to right, $footer_color, $light_color);
     padding: 60px 0;
     position: relative;
@@ -2105,4 +2122,218 @@ aside.ask_us {
         top: 0;
         left: 0;
     }
+}
+
+/********************************
+19. Guide
+********************************/
+.guide_form {
+    h1 {
+        color: $text_navy;
+        text-align: center;
+    }
+
+    h5 {
+        color: $grey-3;
+        font-weight: 600;
+    }
+}
+
+.contact_form_guide {
+    form {
+        .form-group {
+            label {
+                width: 100%;
+            }
+
+            input {
+                margin-top: 5px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/******************************
+20. About
+******************************/
+.image_top_page {
+    background: url(../images/contact_cover.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    width: 100%;
+
+    p {
+        color: $white;
+    }
+}
+.about_content {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.about_content h1 {
+    font-size: $font-32;
+    text-align: center;
+    color: $text_navy;
+    text-transform: uppercase;
+}
+
+.about_content {
+    .main_p {
+        margin-top: 30px;
+        font-size: $font-18;
+        color: $grey-1;
+    }
+}
+
+.team_mem {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $white;
+    .team_members {
+        font-size: $font-32;
+        color: $text_navy;
+        text-align: center;
+    }
+}
+
+.featured_img_m {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+        height: 350px;
+        width: 100%;;
+        object-fit: cover;
+        border-radius: 5px;;
+    }
+}
+
+.member_info {
+    text-align: center;
+
+    .mem_name {
+        margin-top: 20px;
+        h5 {
+            letter-spacing: 2px;
+            line-height: 1;
+            color: $text_navy;
+        }
+    }
+
+    .mem_designation {
+        margin-top: 15px;
+        p {
+            font-size: $font-16;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: $grey-3;
+        }
+    }
+    .mem_description {
+        margin-top: 15px;
+        p {
+
+        }
+    }
+}
+
+.team_mem_list {
+    margin-top: 45px;
+}
+
+.img_about_overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $hover_overlay;
+    top: 0;
+    left: -300px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+
+
+    .overlay_wrap {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .social_ico {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+            i {
+                font-size: 25px;
+                color: $white;
+            }
+        }
+    }
+
+}
+
+.featured_img_m:hover .img_about_overlay {
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-in-out;
+}
+
+.our_services {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    h2 {
+        font-size: $font-32;
+        color: $text_navy;
+        text-align: center;
+    }
+}
+
+.service_single_wrap {
+    margin-top: 100px;
+    border-radius: 5px;
+    position: relative;
+    background: $white;
+    padding: 90px 30px 45px 30px;
+    transition: all 0.25s ease-in-out;
+
+
+    .service_title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        color: $text_navy;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 15px;
+        color: $grey-2;
+    }
+}
+
+.icon_service {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: $light_color_l;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center;
+    i {
+        font-size: 45px;
+        color: $white;
+        min-width: 45px;;
+    }
+}
+
+.service_single_wrap:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+    transform: translateY(-5px);
+    transition: all 0.35s ease-in-out;
 }
