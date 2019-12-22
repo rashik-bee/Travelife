@@ -31,7 +31,7 @@ html{
 
 @font-face {
     font-family: 'Beyond';
-    src: url("/fonts/beyond_the_mountains.otf") format("truetype"), url("../fonts/beyond_the_mountains.ttf") format("opentype");
+    src: url("../fonts/beyond_the_mountains.otf") format("truetype"), url("../fonts/beyond_the_mountains.ttf") format("opentype");
   }
 
 /*************** 
@@ -265,7 +265,7 @@ a {
 }
 
 .content_left {
-    margin-right: 30px;
+    // margin-right: 30px;
 }
 
 .content_left i,
@@ -284,7 +284,7 @@ a {
 
 
 .content_right {
-    margin-left: 15px;
+    // margin-left: 15px;
 }
 
 .content_left i {
@@ -316,6 +316,11 @@ a {
     }
 }
 
+.user_option .content_left {
+    a:not(:first-child) {
+        margin-left: 20px;
+    }
+}
 
 .user_option .sign_up {
     margin-left: 5px;
@@ -477,7 +482,7 @@ header.scrolled .nav_section {
 *******************************/
 .hero_section {
     height: 100vh;
-    background-image: url(/images/everest.jpg);
+    background-image: url(../images/everest.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -1371,7 +1376,7 @@ footer {
     position: relative;
     width: 100%;
     height: 450px;
-    background-image: url("/images/everest.jpg");
+    background-image: url("../images/everest.jpg");
     background-size: cover;
     background-position: center center;
 
@@ -2052,18 +2057,19 @@ aside.ask_us {
 18. Newsletter
 ***************************/
 .newsletter {
-    background: url(../images/news.jpg);
-    // background: linear-gradient(to right, $footer_color, $light_color);
-    padding: 60px 0;
+    background: linear-gradient(to right, $footer_color, $light_color);
+    background: $main_color;
+    padding: 30px 0;
     position: relative;
     
     .newsletter_content {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         justify-content: center;
         height: 100%;
         h2 {
             color: $white;
+            font-size: $font-32
         }
         
         p {
@@ -2073,13 +2079,16 @@ aside.ask_us {
     }
     .newsletter_form  {
         display: flex;
-        margin-top: 90px;
+        // margin-top: 90px;
+        .form-group {
+            margin-bottom: 0px;
+        }
         
         .form-group:first-child {
-            width: 70%;
+            width: auto;
 
             input {
-                width: 100%;
+                width: 450px;
                 height: 50px;
                 padding: 5px 10px;
                 border: none;
@@ -2097,6 +2106,11 @@ aside.ask_us {
             letter-spacing: 2px;
             font-weight: 600;
             border-radius: 0 5px 5px 0;
+
+            &:hover {
+                opacity: 0.8;
+                filter: brightness(1.2);
+            }
         }
     }
 
@@ -2139,18 +2153,81 @@ aside.ask_us {
     }
 }
 
+.quote_wrap {
+    margin: 60px 0;
+}
+
 .contact_form_guide {
+    padding: 30px 45px; 
+    background: linear-gradient(to right, $hover_overlay, $light_color);
     form {
         .form-group {
+            margin-top: 2rem;
             label {
                 width: 100%;
+                color: $white;
             }
 
             input {
                 margin-top: 5px;
                 width: 100%;
+                height: 40px;
+                padding: 5px 15px;
+                border-radius: 5px;
+                border: 2px solid $white;
+                transition: border 0.35s ease-in-out;
+        
+
+                &:focus {
+                    border: 2px solid transparentize($color: $footer_color, $amount: 0.55);
+                    transition: border 0.35s ease-in-out;
+                }
+            }
+
+            textarea {
+                margin-top: 5px;
+                width: 100%;
+                border-radius: 5px;
+                height: 200px;
+                border: 2px solid $white;
+                transition: border 0.35s ease-in-out;
+
+                &:focus {
+                    border: 2px solid transparentize($color: $footer_color, $amount: 0.55);
+                    transition: border 0.35s ease-in-out;
+                }
+            }
+
+        }
+        .button_sub {
+            margin-top: 45px;
+            width: auto;
+            display: block;
+            text-align: center;
+
+            .submit_inquiry {
+                text-transform: uppercase;
+                font-family: "poppins";
+                font-weight: 700;
+                color: #5A5A5A;
+                padding: 10px 20px;
+                font-size: 1rem;
+                background: #A80874;
+                border: none;
+                border-radius: 3px;
+                color: #fff;
+                letter-spacing: 2px;
             }
         }
+    }
+}
+
+.quote_class_img {
+    height: calc(100% - 0px);
+
+    img {
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -2166,6 +2243,8 @@ aside.ask_us {
 
     p {
         color: $white;
+        visibility: none;
+        opacity: 0;
     }
 }
 .about_content {

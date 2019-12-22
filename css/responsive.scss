@@ -262,6 +262,7 @@ html {
     }
 }
 @media only screen and (max-width: 767px) and (min-width: 576px) {
+
     .travel_expert_advice {
 
         margin-bottom: 45px;
@@ -295,6 +296,10 @@ html {
                 right: 100px;
             }
         }
+    }
+
+    .newsletter_content {
+        flex-direction: column;
     }
 }
 @media only screen and (max-width:575px){
@@ -403,6 +408,32 @@ html {
     }
     .copyright .menu_single_q a {
         font-size: $font-12;
+    }
+
+   
+    .newsletter_content {
+        flex-direction: column;
+
+        .newsletter_header {
+            h2 {
+                font-size: $font-24;
+            }
+
+            .form-group input {
+                width: 200px;
+            }
+        }
+    }
+    .newsletter .newsletter_form .form-group:first-child input  {
+        width: 300px;
+    }
+
+    .newsletter .newsletter_form .form-group button {
+        padding: 5px 10px;
+    }
+
+    .newsletter .newsletter_form {
+        margin-top: 30px;
     }
 
 }

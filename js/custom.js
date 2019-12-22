@@ -4,7 +4,7 @@ $(document).ready(function() {
     initHeightAdCss();
     initPackageCarousel();
     initTestimonial();
-    initStickyIt();
+    // initStickyIt();
     initFooterNavOrder();
     initImageGal();
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
         // let height1
         let height_1 = $('.destinations').height();
-        console.log(height_1);
+        // console.log(height_1);
 
         if(height_1 >= 500) {
             $('.destination_left').addClass('heightened');
@@ -121,11 +121,11 @@ $(document).ready(function() {
     }
 
     //sticky position margin
-    function initStickyIt() {
-        $('.it_nav').scroll(function() {
-            alert('you have reached');
-        }) ;
-    }
+    // function initStickyIt() {
+    //     $('.it_nav').scroll(function() {
+    //         alert('you have reached');
+    //     }) ;
+    // }
 
     //FOOTER NAV ORDER 
     function initFooterNavOrder() {
@@ -142,32 +142,32 @@ $(document).ready(function() {
     function initImageGal() {
         var imageArray = [
             {
-                "url": "/images/trek-1.jpg",
+                "url": "images/trek-1.jpg",
                 "width": 270,
                 "height": 230
             },
             {
-                "url": "/images/trek-2.jpg",
+                "url": "images/trek-2.jpg",
                 "width": 250,
                 "height": 230
             },
             {
-                "url": "/images/trek-3.jpg",
+                "url": "images/trek-3.jpg",
                 "width": 200,
                 "height": 230
             },
             {
-                "url": "/images/trek-4.jpg",
+                "url": "images/trek-4.jpg",
                 "width": 260,
                 "height": 230
             },
             {
-                "url": "/images/trek-5.jpg",
+                "url": "images/trek-5.jpg",
                 "width": 200,
                 "height": 230
             },
             {
-                "url": "/images/trek-6.jpg",
+                "url": "images/trek-6.jpg",
                 "width": 350,
                 "height": 230
             },

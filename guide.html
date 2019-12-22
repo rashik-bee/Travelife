@@ -9,27 +9,22 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.flex-photo-gallery.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/jquery.js"></script>
     <title>Document</title>
 </head>
 <body class="index_home">
-    <nav aria-label="breadcrumb" class="breadcrumb_page">
-        <ol class="breadcrumb d-flex align-items-center">
-            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-            <li class="breadcrumb-item"><a href="#">destinations</a></li>
-            <li class="breadcrumb-item active" aria-current="page">itinerary</li>
-        </ol>
-    </nav>
     <header class="header_fix fixx">
         <div class="top_bar" id="top_bar">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="top_left d-flex">
-                        <div class="content_left d-flex align-items-center">
+                        <!-- <div class="content_left d-flex align-items-center">
                             <a href="tel: +97789898989">+977-8989898989</a>
-                        </div>
+                        </div> -->
 
                         <div class="content_right d-flex align-items-center">
                             <!-- <i class="far fa-envelope"></i> -->
@@ -54,15 +49,19 @@
                     </ul> -->
 
                     <div class="user_option d-flex">
-                        <div class="log_in d-flex align-items-center">
-                            <!-- <i class="icon-login"></i> -->
+                         <div class="content_left d-flex align-items-center">
+                            <a href="tel: +97789898989"> NP:&nbsp;&nbsp;&nbsp;+977-8989898989</a>
+                            <a href="tel: +97789898989"> US:&nbsp;&nbsp;&nbsp;+977-8989898989</a>
+                            <a href="tel: +97789898989"> MY:&nbsp;&nbsp;&nbsp;+977-8989898989</a>
+                        </div>
+
+                        <!-- <div class="log_in d-flex align-items-center">
                             <a href="">login</a>
                         </div>
 
                         <div class="sign_up d-flex align-items-center">
-                            <!-- <i class="icon-user"></i> -->
                             <a href="">sign up</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -83,7 +82,7 @@
                                     <a href="index.html">home</a> 
                                     </li>
                                     <li class="nav_item">
-                                    <a href="">about</a> 
+                                    <a href="about.html">about</a> 
                                     </li>
                                     <li class="nav_item">
                                     <a href="">destinations</a> 
@@ -160,35 +159,43 @@
             <h1>Become a Tour Guide</h1>
             <h5 class="sub_guide_title centerize">Work with us.</h5>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="contact_wrap">
-                        <div class="contact_form_guide">
-                            <form>
-                                <div class="form-group">
-                                    <label for="name">Full Name*</label>
-                                    <input type="name" required>
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="email">E-mail Address*</label>
-                                    <input type="email" required>
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="contact_num">Contact Number</label>                                   
-                                    <input type="text">
-                                </div>
-    
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                                </div>
-                                <div class="form-group button_sub">
-                                    <button class="submit_inquiry" type="sumit">send inquiry</button>
-                                </div>
-                            </form>
+            <div class="quote_wrap">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="contact_wrap">
+                            <div class="contact_form_guide">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Full Name*</label>
+                                        <input type="name" required>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="email">E-mail Address*</label>
+                                        <input type="email" required>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="contact_num">Contact Number</label>                                   
+                                        <input type="text">
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="form-group button_sub">
+                                        <button class="submit_inquiry" type="sumit">send inquiry</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <figure class="quote_class_img">
+                            <img src="images/lake.jpg" alt="">
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -297,6 +304,8 @@
 
     <script src="js/owl.carousel.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.flex-photo-gallery.js"></script>
+
     <script src="js/custom.js"></script>
 </body>
 </html>

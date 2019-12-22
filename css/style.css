@@ -345,8 +345,8 @@ textarea {
 
 @font-face {
   font-family: "icomoon";
-  src: url("/fonts/icomoon.eot?7vdeah");
-  src: url("/fonts/icomoon.eot?7vdeah#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?7vdeah") format("truetype"), url("/fonts/icomoon.woff?7vdeah") format("woff"), url("/fonts/icomoon.svg?7vdeah#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?7vdeah");
+  src: url("../fonts/icomoon.eot?7vdeah#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?7vdeah") format("truetype"), url("../fonts/icomoon.woff?7vdeah") format("woff"), url("../fonts/icomoon.svg?7vdeah#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -547,7 +547,7 @@ textarea {
 
 @font-face {
   font-family: "Beyond";
-  src: url("/fonts/beyond_the_mountains.otf") format("truetype"), url("../fonts/beyond_the_mountains.ttf") format("opentype");
+  src: url("../fonts/beyond_the_mountains.otf") format("truetype"), url("../fonts/beyond_the_mountains.ttf") format("opentype");
 }
 /*************** 
 1.2 Global css 
@@ -794,10 +794,6 @@ a:hover {
   background: #A80874;
 }
 
-.content_left {
-  margin-right: 30px;
-}
-
 .content_left i,
 .content_right i,
 .content_left a,
@@ -810,10 +806,6 @@ a:hover {
 .content_left a,
 .content_right a {
   margin-left: 5px;
-}
-
-.content_right {
-  margin-left: 15px;
 }
 
 .content_left i {
@@ -840,6 +832,10 @@ a:hover {
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.user_option .content_left a:not(:first-child) {
+  margin-left: 20px;
 }
 
 .user_option .sign_up {
@@ -975,7 +971,7 @@ header.scrolled .nav_section {
 *******************************/
 .hero_section {
   height: 100vh;
-  background-image: url(/images/everest.jpg);
+  background-image: url(../images/everest.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -1716,7 +1712,7 @@ footer {
   position: relative;
   width: 100%;
   height: 450px;
-  background-image: url("/images/everest.jpg");
+  background-image: url("../images/everest.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -2299,18 +2295,18 @@ aside.ask_us a p {
 18. Newsletter
 ***************************/
 .newsletter {
-  background: url(../images/news.jpg);
-  padding: 60px 0;
+  background: linear-gradient(to right, #DF54CF, #A06CD5);
+  background: #950952;
+  padding: 30px 0;
   position: relative;
 }
 .newsletter .newsletter_content {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 .newsletter .newsletter_content h2 {
   color: #fff;
+  font-size: 2.2857rem;
 }
 .newsletter .newsletter_content p {
   color: white;
@@ -2318,13 +2314,15 @@ aside.ask_us a p {
 }
 .newsletter .newsletter_form {
   display: flex;
-  margin-top: 90px;
+}
+.newsletter .newsletter_form .form-group {
+  margin-bottom: 0px;
 }
 .newsletter .newsletter_form .form-group:first-child {
-  width: 70%;
+  width: auto;
 }
 .newsletter .newsletter_form .form-group:first-child input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   padding: 5px 10px;
   border: none;
@@ -2340,6 +2338,10 @@ aside.ask_us a p {
   letter-spacing: 2px;
   font-weight: 600;
   border-radius: 0 5px 5px 0;
+}
+.newsletter .newsletter_form .form-group button:hover {
+  opacity: 0.8;
+  filter: brightness(1.2);
 }
 .newsletter .newsletter_featured_img {
   min-height: 300px;
@@ -2374,12 +2376,72 @@ aside.ask_us a p {
   font-weight: 600;
 }
 
+.quote_wrap {
+  margin: 60px 0;
+}
+
+.contact_form_guide {
+  padding: 30px 45px;
+  background: linear-gradient(to right, #792AFF, #A06CD5);
+}
+.contact_form_guide form .form-group {
+  margin-top: 2rem;
+}
 .contact_form_guide form .form-group label {
   width: 100%;
+  color: #fff;
 }
 .contact_form_guide form .form-group input {
   margin-top: 5px;
   width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  transition: border 0.35s ease-in-out;
+}
+.contact_form_guide form .form-group input:focus {
+  border: 2px solid rgba(223, 84, 207, 0.45);
+  transition: border 0.35s ease-in-out;
+}
+.contact_form_guide form .form-group textarea {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+  border: 2px solid #fff;
+  transition: border 0.35s ease-in-out;
+}
+.contact_form_guide form .form-group textarea:focus {
+  border: 2px solid rgba(223, 84, 207, 0.45);
+  transition: border 0.35s ease-in-out;
+}
+.contact_form_guide form .button_sub {
+  margin-top: 45px;
+  width: auto;
+  display: block;
+  text-align: center;
+}
+.contact_form_guide form .button_sub .submit_inquiry {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-weight: 700;
+  color: #5A5A5A;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #A80874;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.quote_class_img {
+  height: calc(100% - 0px);
+}
+.quote_class_img img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /******************************
@@ -2394,6 +2456,8 @@ aside.ask_us a p {
 }
 .image_top_page p {
   color: #fff;
+  visibility: none;
+  opacity: 0;
 }
 
 .about_content {
